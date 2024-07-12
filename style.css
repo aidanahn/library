@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body {
+    height: 100vh;
+    background-color: #f0eef1;
+    overflow-x: hidden !important;
+
+}
+
+.header-container {
+    background-color: #fffbfb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 0 5px rgb(186, 186, 186);
+}
+
+.header-container .title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 9%;
+}
+
+.header-container .log-in-btn {
+    border: none;
+    background-color: #f0f0f0;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-right: 9%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+.container .add-btn {
+    background-color: #f0eef1;
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.container .add-btn:hover {
+    filter: brightness(90%);
+    border-radius: 8px;
+}
+
+.pop-up-container {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.pop-up-container .pop-up {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0eef1;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    animation-name: animatepopup;
+    animation-duration: 0.2s;
+}
+
+@keyframes animatepopup {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 366.5px;
+    }
+}
+
+.pop-up .pop-up-header {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.pop-up-container form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+form input {
+    border: none;
+    padding: 10px;
+    width: 260px;
+    border-radius: 8px;
+}
+
+form input::placeholder {
+    font-size: 18px;
+}
+
+.read-status-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.read-status-container span {
+    font-size: 18px;
+}
+
+.read-status-container input {
+    height: 20px;
+    width: 20px;
+}
+
+form .submit-btn {
+    background-color: rgb(159, 255, 156);
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 40px;
+    column-gap: 40px;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+.book-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    text-align: center;
+    gap: 20px;
+}
+
+.book-container p,
+.book-container button {
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+}
+
+.book-container button {
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.read {
+    background-color: #9fff9c;
+}
+
+.not-read {
+    background-color: #ff9c9c;
+}
